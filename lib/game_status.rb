@@ -28,11 +28,11 @@ def won?(board)
     pos_3 = board[win_index_3]
     
     if pos_1 == "X" && pos_2 == "X" && pos_3 == "X"
-      answer = true
+      return win_combo
     end
     
     if pos_1 == "O" && pos_2 == "O" && pos_3 == "O"
-      answer = true
+      return win_combo
     end
   end
   answer
