@@ -60,7 +60,11 @@ def draw?(board)
 end
 
 def over?(board)
-  draw?(board)
+  if draw?(board) || won?(board) || (won?(board) && full?(board))
+    true
+  else
+    false
+  end
 end
 
 
