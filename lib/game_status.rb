@@ -21,4 +21,6 @@ def won?(board)
 end
 
 def full?(board)
-  
+  state = false
+  board.each do |x|
+    if 
