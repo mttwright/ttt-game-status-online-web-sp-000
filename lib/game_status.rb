@@ -21,6 +21,20 @@ def won?(board)
 end
 
 def full?(board)
-  state = false
+  counter = 0
   board.each do |x|
-    if 
+    if x == "X" || x == "O"
+      counter += 1
+    end
+  end
+  if counter == 9
+    true
+  else
+    false
+  end
+end
+      
+      
+      
+      
+      
